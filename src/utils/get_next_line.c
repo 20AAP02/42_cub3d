@@ -6,7 +6,7 @@
 /*   By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 20:18:17 by amaria-m          #+#    #+#             */
-/*   Updated: 2022/09/07 20:26:44 by amaria-m         ###   ########.fr       */
+/*   Updated: 2022/09/08 11:56:17 by amaria-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*get_line(char *line, char *buffer, long size_buffer, long *size_line)
 	data.size_buffer = -1;
 	data.line = line;
 	*size_line += size_buffer;
-	line = malloc_ob(*size_line + 1 * sizeof(char));
+	line = malloc(*size_line + 1 * sizeof(char));
 	if (line)
 	{
 		line[*size_line] = 0;
@@ -47,13 +47,13 @@ char	*get_line(char *line, char *buffer, long size_buffer, long *size_line)
 			buffer[data.size_line] = 0;
 		}
 	}
-	free_ob(data.line);
+	free(data.line);
 	return (line);
 }
 
 char	*get_next_line(int fd)
 {
-	static char	f[BUFFER_SIZE + 1];
+	static char	f[BUFFERSIZE + 1];
 	t_line		d;
 
 	d.line = NULL;
@@ -65,7 +65,7 @@ char	*get_next_line(int fd)
 	while (fd >= 0 && d.index > 0)
 	{
 		if (!f[0] || !d.size_buffer)
-			d.size_buffer = read(fd, f, BUFFER_SIZE);
+			d.size_buffer = read(fd, f, BUFFERSIZE);
 		d.index = d.size_buffer;
 		if (d.size_buffer > 0)
 		{

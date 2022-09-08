@@ -6,7 +6,7 @@
 #    By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/30 19:55:47 by amaria-m          #+#    #+#              #
-#    Updated: 2022/09/07 18:48:22 by amaria-m         ###   ########.fr        #
+#    Updated: 2022/09/08 18:35:02 by amaria-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,13 +21,13 @@ SRCS		= 	$(shell find src/ -name '*.c')
 OBJS		= 	$(SRCS:.c=.o)
 
 .c.o:
-	@$(CC) $(CFLAGS) -I/usr/include -Imlx_linux -O3 -I$(INCLUDES) -c $< -o $(<:.c=.o)
+	@$(CC) $(CFLAGS) -Imlx_linux -I$(INCLUDES) -c $< -o $(<:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	@echo "\033[0;32mOBJECT FILES COMPILED\033[0m"
-	@$(CC) $(CFLAGS) -I$(INCLUDES) $(OBJS) -Lmlx_linux -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz -o $(NAME)
+	@$(CC) $(CFLAGS) -I$(INCLUDES) $(OBJS) -Imlx_linux -o $(NAME)
 	@echo "\033[0;32mEXECUTABLE IS READY TO USE\033[0m"
 
 clean:
@@ -42,6 +42,9 @@ re: fclean all
 
 norm :
 	@norminette -R CheckForbiddenSourceHeader $(SRCS)
+
+mc:
+	@make && make clean
 
 e:
 	@make re && make clean && clear && ./$(NAME)

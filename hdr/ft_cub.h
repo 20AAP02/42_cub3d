@@ -6,7 +6,7 @@
 /*   By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 19:56:15 by amaria-m          #+#    #+#             */
-/*   Updated: 2022/09/08 11:57:40 by amaria-m         ###   ########.fr       */
+/*   Updated: 2022/09/08 18:33:34 by amaria-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,10 @@
 
 # define BUFFERSIZE 9999
 
+// utils
 char	*get_next_line(int fd);
+
+// checker
+t_list	*ft_map_check(char *filename);
 
 #endif

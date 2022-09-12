@@ -6,7 +6,7 @@
 #    By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/30 19:55:47 by amaria-m          #+#    #+#              #
-#    Updated: 2022/09/08 18:35:02 by amaria-m         ###   ########.fr        #
+#    Updated: 2022/09/12 16:00:54 by amaria-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,7 @@ norm :
 	@norminette -R CheckForbiddenSourceHeader $(SRCS)
 
 mc:
-	@make && make clean
+	@make && make clean && clear
 
 e:
 	@make re && make clean && clear && ./$(NAME)

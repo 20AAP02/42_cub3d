@@ -6,7 +6,7 @@
 /*   By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 19:56:15 by amaria-m          #+#    #+#             */
-/*   Updated: 2022/09/08 18:33:34 by amaria-m         ###   ########.fr       */
+/*   Updated: 2022/09/12 15:24:57 by amaria-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@
 char	*get_next_line(int fd);
 
 // checker
-t_list	*ft_map_check(char *filename);
+t_list	*ft_read_map(char *filename);
 
 #endif

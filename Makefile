@@ -6,7 +6,7 @@
 #    By: amaria-m <amaria-m@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/30 19:55:47 by amaria-m          #+#    #+#              #
-#    Updated: 2022/09/12 16:00:54 by amaria-m         ###   ########.fr        #
+#    Updated: 2022/10/17 15:53:04 by amaria-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,9 +47,9 @@ mc:
 	@make && make clean && clear
 
 e:
-	@make re && make clean && clear && ./$(NAME)
+	@make re && make clean && clear && ./$(NAME) ex.cub
 
 v:
-	@make re && make clean && clear && valgrind ./$(NAME)
+	@make re && make clean && clear && valgrind ./$(NAME) ex.cub
 
 .PHONY: all re clean fclean norm e v

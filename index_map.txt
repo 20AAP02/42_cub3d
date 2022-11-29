@@ -1,0 +1,19 @@
+----- Mandatory -----
+
+N S W E = wolf (directions)
+0   = Floor (color)
+1   = T
+' ' = Nothing
+
+------- Index Map -------
+
+2 = House Floor
+3 = Cave Floor
+d = Open Door
+D = Door
+m = Wood Window
+M = Wood Wall
+C = Cave Wall
+c = Cristals (Collectable)
+B = Bush (Life)
+p = Pig (Enimies)

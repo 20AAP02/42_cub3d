@@ -1,4 +1,5 @@
 <h1 align="center"> Cub3d | 42 School Group Project </h1>
+h6>Group Project with Ruben Teles (https://github.com/RubenTeles/Cub3d)</h6>
 <h5>This project is inspired by the world-famous eponymous 90's game, which was the first FPS ever!</h5>
 <p>It enabled me to explore ray-casting and the goal was to make a dynamic view inside a maze, in which you'll have to find your way.</p>
 

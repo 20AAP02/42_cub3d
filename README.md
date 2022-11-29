@@ -31,6 +31,7 @@ make e
 ```
 
 <i>Commands / keys</i>
+```
 Tab - Tasks  
 W - Move Foward  
 S - Move Backward  
@@ -43,4 +44,4 @@ Mouse right button - Blow wind
 Mouse left button - Atack / Collect Crystals  
 E - Catch Fruits to get stamina  
 SHIFT - Run  
-
+```

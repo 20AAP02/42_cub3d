@@ -6,11 +6,11 @@
 -----
 
 <h4>What I learned with this project?</h4>
-<p>Team work</p>
-<p>Raycasting</p>
-<p>Improved my understanding of window management</p>
-<p>Improved my understanding of game development</p>
-<p>Improved my understanding of memory management</p>
+<p> -Team work</p>
+<p> -Raycasting</p>
+<p> -Improved my understanding of window management</p>
+<p> -Improved my understanding of game development</p>
+<p> -Improved my understanding of memory management</p>
 
 ----
 

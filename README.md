@@ -49,4 +49,6 @@ SHIFT - Run
 ----
 
 <h4>Images</h4>
+
 ![alt text](https://github.com/20AAP02/42_cub3d/blob/main/images/cave2.png)
+

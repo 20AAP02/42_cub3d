@@ -52,3 +52,14 @@ SHIFT - Run
 
 ![alt text](https://github.com/20AAP02/42_cub3d/blob/main/images/cave2.png)
 
+![alt text](https://github.com/20AAP02/42_cub3d/blob/main/images/fog.png)
+
+![alt text](https://github.com/20AAP02/42_cub3d/blob/main/images/house.png)
+
+![alt text](https://github.com/20AAP02/42_cub3d/blob/main/images/inside_cave.png)
+
+![alt text](https://github.com/20AAP02/42_cub3d/blob/main/images/inside_house.png)
+
+![alt text](https://github.com/20AAP02/42_cub3d/blob/main/images/start_menu.png)
+
+![alt text](https://github.com/20AAP02/42_cub3d/blob/main/images/window.png)
